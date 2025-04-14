@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Booking</title>
+    <link rel="stylesheet" href="/park.css">     
+</head>
+<body>
+    <button id="back-button" onclick="window.history.back();">Back</button>
+    <!-- Parking Details Section -->
+    <div id="parking-details">
+        <div id="parking-header">
+           <center> <h2 id="parking-name"> Muthuvel Parking</h2></center>
+            <p id="parking-description"></p>
+        </div>
+
+        <div id="parking-info">
+            <div id="parking-image-container">
+                <center><img id="parking-image" src="signup.jpg" alt="Parking Image"></center>
+            </div>
+            <button id="view-location">View Location</button>
+            <div id="parking-stats">
+                <p><strong>Price Details:</strong></p>
+                <table id="price-table">
+                    <thead>
+                        <tr>
+                            <th>Car</th>
+                            <th>20 (Per Hour)</th>
+                        </tr>
+                        <tr>
+                            <th>Bike</th>
+                            <th>10 (Per Hour)</th>
+                        </tr>
+                        <tr>
+                            <th>Bus</th>
+                            <th>30 (Per Hour)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="price-details">
+                        <!-- Price details will be dynamically populated here -->
+                    </tbody>
+                </table>
+                <p><strong>Available Slots:10</strong> <span id="available-slots"></span></p>
+                <p><strong>Occupied Slots:9</strong> <span id="occupied-slots"></span></p>
+            </div>
+        </div>
+
+        <!-- Booking Form -->
+        <h3>Book Your Slot</h3>
+        <form id="booking-form">
+            <label for="vehicle-number">Vehicle Number:</label>
+            <input type="text" id="vehicle-number" required>
+
+            <label for="owner-name">Your Name:</label>
+            <input type="text" id="owner-name" required>
+
+            <button type="submit">Book Slot</button>
+        </form>
+    </div>
+
+    <script src="/park.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('home.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 1200px;
+  /*background-image: url('home.jpg'); 
+  background-size: cover;
+  background-position: center;*/
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-right: 15px;
+}
+
+.user-info p {
+  font-size: 14px;
+  color:white;
+}
+
+.user-info h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+}
+
+.notification {
+  position: relative;
+}
+
+.notification img {
+  width: 30px;
+  height: 30px;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.icons img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+}
+
+.nearby {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color:white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card .info {
+  padding: 15px;
+}
+
+.card .info h5 {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.card .info p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card .info strong {
+  font-size: 16px;
+  color: #000;
+}
+.card {
+  text-decoration: none;
+  color: inherit;
+}
